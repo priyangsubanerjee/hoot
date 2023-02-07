@@ -1,0 +1,830 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #100054;
+  padding-bottom: 40px;
+}
+
+.avatarBackground {
+  height: 400px;
+  background: url(/images/profile-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.avatarBackground .avatarBackgroundOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding-top: 30px;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.avatarBackground .avatarBackgroundOverlay:hover {
+  opacity: 1;
+}
+
+.avatarBackground .fixedOpactiy {
+  background-color: #040022c8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatarBackground .fixedOpactiy .contentBoxRelative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.avatarBackground .fixedOpactiy .contentBoxRelative .profileBox {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: -50%;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 3;
+}
+
+.avatarBackground .fixedOpactiy .contentBoxRelative .profileBox .profileImage {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.avatarBackground
+  .fixedOpactiy
+  .contentBoxRelative
+  .profileBox
+  .profileImage
+  .profileImageOverlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1.7;
+  border-radius: 50%;
+}
+
+.avatarBackground
+  .fixedOpactiy
+  .contentBoxRelative
+  .profileBox
+  .profileImage
+  .profileImageOverlay:hover {
+  opacity: 1;
+}
+
+.avatarBackground
+  .fixedOpactiy
+  .contentBoxRelative
+  .profileBox
+  .profileImage
+  img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.avatarBackground
+  .fixedOpactiy
+  .contentBoxRelative
+  .profileBox
+  .profileImage
+  .profileImageEditButton {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #040022c8;
+  color: #e4e4e4;
+  position: absolute;
+  right: 0;
+  bottom: -8px;
+  z-index: 5;
+  font-size: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatarBackground .fixedOpactiy .contentBoxRelative .profileBox h1 {
+  font-size: 24px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.avatarBackground .fixedOpactiy .contentBoxRelative .profileBox h2 {
+  font-size: 15px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-top: 7px;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction {
+  position: absolute;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatarBackground .fixedOpactiy .rightEndAction .edit-profileLG {
+  width: 190px;
+  height: 50px;
+  background-color: #5222d0;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .edit-profileLG:hover {
+  background-color: #3a139f;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .edit-profileXS {
+  display: none;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .withdraw-requestXS {
+  display: none;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .add-friendXS {
+  display: none;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .un-friendXS {
+  display: none;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .take-actionXS {
+  display: none;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .add-friendLG {
+  width: 190px;
+  height: 50px;
+  background-color: #16c95d;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .take-actionLG .accept {
+  width: 190px;
+  height: 50px;
+  background-color: #16c95d;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .take-actionLG .accept:hover {
+  background-color: #109746;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .take-actionLG .decline {
+  width: 190px;
+  height: 50px;
+  background-color: transparent;
+  border: 1.5px solid #f74855;
+  outline: none;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #f74855;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  margin-top: 15px;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .take-actionLG .decline:hover {
+  background-color: #f74855;
+  color: white;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .add-friendLG:hover {
+  background-color: #158a44;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .withdraw-requestLG {
+  width: 190px;
+  height: 50px;
+  background-color: transparent;
+  outline: none;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #a3a3a3;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #a3a3a3;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .un-friendLG {
+  width: 190px;
+  height: 50px;
+  background-color: #f74855;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.avatarBackground .fixedOpactiy .rightEndAction .un-friendLG:hover {
+  background-color: #d32f2f;
+}
+
+.avatarBackground
+  .fixedOpactiy
+  .rightEndAction
+  .withdraw-requestLG
+  iconify-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 30% auto 30%;
+  gap: 30px;
+  padding: 0 70px;
+  margin-top: 30px;
+}
+
+.contentGrid .gridElement {
+  width: 100%;
+  height: fit-content;
+  background: #000;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.contentGrid .gridElement .heading {
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.contentGrid .gridElement .description {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+.contentGrid .gridElement .metaDataContainer {
+  margin-top: 25px;
+  font-family: "Inter", sans-serif;
+}
+
+.contentGrid .gridElement .metaDataContainer .metaData {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-top: 10px;
+}
+.contentGrid .gridElement .metaDataContainer .metaData .metaQ,
+.contentGrid .gridElement .metaDataContainer .metaData .metaP {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.contentGrid .gridElement .metaDataContainer .metaData .metaQ iconify-icon,
+.contentGrid .gridElement .metaDataContainer .metaData .metaP iconify-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.contentGrid .comments .writeCommentFlexBox {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contentGrid .comments .writeCommentFlexBox img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.contentGrid .comments .writeCommentFlexBox .inputFlexBox {
+  display: flex;
+  background: transparent;
+  border: 2px solid #321693;
+  width: 100%;
+  height: 45px;
+  padding: 10px 20px;
+  margin-left: 15px;
+  border-radius: 5px;
+}
+
+.contentGrid .comments .writeCommentFlexBox .inputFlexBox .reaction-box {
+  position: relative;
+}
+
+.contentGrid
+  .comments
+  .writeCommentFlexBox
+  .inputFlexBox
+  .reaction-box
+  iconify-icon {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.contentGrid .comments .writeCommentFlexBox .inputFlexBox input {
+  background: transparent;
+  font-size: 14px;
+  color: white;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.contentGrid .comments .messageBox {
+  display: flex;
+  margin-top: 15px;
+}
+
+.contentGrid .comments .messageBox img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.contentGrid .comments .messageBox .replyBox {
+  background: #321693;
+  margin-left: 15px;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  border-radius: 0 10px 10px 10px;
+}
+
+.contentGrid .comments .messageBox .replyBox .quickActionHeader {
+  display: flex;
+  align-items: center;
+}
+
+.contentGrid .comments .messageBox .replyBox .quickActionHeader .moreActions {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.reaction-box {
+  margin-left: auto;
+  position: relative;
+}
+
+.moreAction-box {
+  position: relative;
+  margin-left: 10px;
+}
+
+.moreAction-box iconify-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.reaction-box iconify-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.reactionToast {
+  position: absolute;
+  height: 40px;
+  top: 25px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background: #100054;
+  padding: 0px 10px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.reactionToast.active {
+  opacity: 1;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.reactionToast button {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 24px;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.reactionToast button:hover {
+  font-size: 30px;
+}
+
+.moreToast {
+  position: absolute;
+  height: 50px;
+  top: 25px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background: #100054;
+  padding: 5px 5px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.moreToast.active {
+  opacity: 1;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.moreToast button {
+  background: #000;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  color: #f74855;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.moreToast button:hover {
+  background: #f74855;
+  color: #fff;
+}
+
+.moreToast button iconify-icon {
+  font-size: 18;
+  margin-right: 7px;
+}
+
+.moreToast button span {
+  font-size: 14px;
+}
+
+.contentGrid .comments .messageBox .replyBox .messageContent {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.tooltip {
+  z-index: 30;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.contentGrid .events .event {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50px 5px 5px 50px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contentGrid .events .event:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.contentGrid .events .event img {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+}
+
+.contentGrid .events .event .eventDescription {
+  color: white;
+  margin-left: 16px;
+}
+
+.contentGrid .events .event .eventDescription h3 {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contentGrid .events .event .eventDescription p {
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.contentGrid .events .event iconify-icon {
+  color: white;
+  font-size: 20px;
+  margin-left: auto;
+  transition: all 0.3s ease;
+}
+
+.contentGrid .events .event iconify-icon:hover {
+  transform: translateX(5px);
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  white-space: nowrap;
+  background-color: #210182;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  opacity: 1;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  transform: translateX(-27%);
+  z-index: 10;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #210182 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.spacer-circle {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 1230px) {
+  .avatarBackground .fixedOpactiy .rightEndAction {
+    right: 30px;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .edit-profileLG {
+    display: none;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .add-friendLG {
+    display: none;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .withdraw-requestLG {
+    display: none;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .un-friendLG {
+    display: none;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .take-actionLG {
+    display: none;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .edit-profileXS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .add-friendXS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .un-friendXS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .take-actionXS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .withdraw-requestXS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .take-actionXS .accept,
+  .avatarBackground .fixedOpactiy .rightEndAction .take-actionXS .decline {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+  }
+
+  .avatarBackground
+    .fixedOpactiy
+    .rightEndAction
+    .take-actionXS
+    .accept
+    iconify-icon {
+    font-size: 27px;
+    color: #4ecb71;
+  }
+
+  .avatarBackground
+    .fixedOpactiy
+    .rightEndAction
+    .take-actionXS
+    .decline
+    iconify-icon {
+    font-size: 27px;
+    color: #f74855;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .take-actionXS .accept span {
+    font-size: 14px;
+    color: #4ecb71;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .take-actionXS .decline span {
+    font-size: 14px;
+    color: #f74855;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .edit-profileXS iconify-icon {
+    font-size: 27px;
+    color: #8d42f1;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .add-friendXS iconify-icon {
+    font-size: 27px;
+    color: #4ecb71;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .un-friendXS iconify-icon {
+    font-size: 27px;
+    color: #f74855;
+  }
+
+  .avatarBackground
+    .fixedOpactiy
+    .rightEndAction
+    .withdraw-requestXS
+    iconify-icon {
+    font-size: 27px;
+    color: #a3a3a3;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .edit-profileXS span {
+    font-size: 14px;
+    color: #8d42f1;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .add-friendXS span {
+    font-size: 14px;
+    color: #4ecb71;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .un-friendXS span {
+    font-size: 14px;
+    color: #f74855;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+  }
+
+  .avatarBackground .fixedOpactiy .rightEndAction .withdraw-requestXS span {
+    font-size: 14px;
+    color: #a3a3a3;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+  }
+
+  .contentGrid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  .contentGrid .gridElement {
+    padding: 20px;
+  }
+}

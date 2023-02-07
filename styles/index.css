@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/images/login-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.opacityBlock {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opacityBlock .loginCard {
+  background: #100054;
+
+  width: 644px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0px 0px 50px 5px rgba(255, 255, 255, 0.08);
+}
+
+.opacityBlock .loginCard .loginCardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.opacityBlock .loginCard .loginCardHeader h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 7px;
+  font-family: "Poppins", sans-serif;
+}
+
+.opacityBlock .loginCard .loginCardHeader p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.opacityBlock .loginCard .inputBlock {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.opacityBlock .loginCard .formBlock {
+  margin-top: 40px;
+}
+
+.opacityBlock .loginCard .formBlock .inputBlock label {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.opacityBlock .loginCard .formBlock .inputBlock input {
+  height: 60px;
+  background-color: #050026;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 17px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.opacityBlock .loginCard .forgotPasswordBlock {
+  margin-top: 10px;
+}
+
+.opacityBlock .loginCard .forgotPasswordBlock button {
+  background: none;
+  border: none;
+  outline: none;
+  color: #c6d5ff;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.opacityBlock .loginCard .captcha {
+  margin-top: 25px;
+}
+
+.opacityBlock .loginCard .captcha p {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.opacityBlock .loginCard .captcha .captchaBlock {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.opacityBlock .loginCard .captcha .captchaBlock .captchaImage {
+  height: 100%;
+
+  width: 100%;
+}
+
+.opacityBlock .loginCard .captcha .captchaBlock .captchaImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.opacityBlock .loginCard .captcha .captchaBlock .captchaInput input {
+  background-color: #050026;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+.opacityBlock .loginCard .loginButton {
+  margin-top: 30px;
+}
+.opacityBlock .loginCard .loginButton button {
+  background-color: #f74855;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.opacityBlock .loginCard .loginButton button:hover {
+  background-color: #fc2331;
+}
+
+.opacityBlock .loginCard .createAccount {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-top: 25px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.opacityBlock .loginCard .createAccount button {
+  background: none;
+  border: none;
+  outline: none;
+  color: #c6d5ff;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .opacityBlock .loginCard {
+    width: 95%;
+    padding: 20px 20px;
+  }
+}
