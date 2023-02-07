@@ -10,31 +10,35 @@ const reactBtn2 = document.getElementById("reactButton_2");
 const moreBtn1 = document.getElementById("moreButton_1");
 const moreBtn2 = document.getElementById("moreButton_2");
 
-changeBannerBtn.addEventListener("click", () => {
-  const fileInput = document.createElement("input");
-  fileInput.type = "file";
-  fileInput.accept = "image/*";
-  fileInput.onchange = () => {
-    const file = fileInput.files[0];
-    if (file) {
-      bannerImg.style.backgroundImage = `url(${URL.createObjectURL(file)})`;
-    }
-  };
-  fileInput.click();
-});
+if (changeAvatarBtn) {
+  changeAvatarBtn.addEventListener("click", () => {
+    const fileInput = document.createElement("input");
+    fileInput.type = "file";
+    fileInput.accept = "image/*";
+    fileInput.onchange = () => {
+      const file = fileInput.files[0];
+      if (file) {
+        avatarImg.src = URL.createObjectURL(file);
+      }
+    };
+    fileInput.click();
+  });
+}
 
-changeAvatarBtn.addEventListener("click", () => {
-  const fileInput = document.createElement("input");
-  fileInput.type = "file";
-  fileInput.accept = "image/*";
-  fileInput.onchange = () => {
-    const file = fileInput.files[0];
-    if (file) {
-      avatarImg.src = URL.createObjectURL(file);
-    }
-  };
-  fileInput.click();
-});
+if (changeBannerBtn) {
+  changeBannerBtn.addEventListener("click", () => {
+    const fileInput = document.createElement("input");
+    fileInput.type = "file";
+    fileInput.accept = "image/*";
+    fileInput.onchange = () => {
+      const file = fileInput.files[0];
+      if (file) {
+        bannerImg.style.backgroundImage = `url(${URL.createObjectURL(file)})`;
+      }
+    };
+    fileInput.click();
+  });
+}
 
 reactBtn1.addEventListener("click", (e) => {
   const reactMenu = e.target.nextElementSibling;
