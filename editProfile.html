@@ -10,17 +10,21 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
   </head>
   <body>
-    <div class="avatarBackground">
-      <div class="avatarBackgroundOverlay">Change Banner Image</div>
+    <div id="avatarBackground" class="avatarBackground">
+      <div id="changeBannerBtn" class="avatarBackgroundOverlay">
+        Change Banner Image
+      </div>
       <div class="fixedOpactiy">
         <div class="contentBoxRelative">
           <div class="profileBox">
             <div class="profileImage">
-              <div class="profileImageOverlay">Change Profile Image</div>
+              <div id="changeAvatarBtn" class="profileImageOverlay">
+                Change Profile Image
+              </div>
               <button class="profileImageEditButton">
                 <iconify-icon icon="mdi:pencil-circle"></iconify-icon>
               </button>
-              <img src="/images/defaultProfile.png" alt="" />
+              <img id="avatarImage" src="/images/defaultProfile.png" alt="" />
             </div>
             <h1>John Doe</h1>
             <h2>Keep Chilling!</h2>
