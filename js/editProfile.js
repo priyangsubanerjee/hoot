@@ -1,7 +1,7 @@
 const changeBannerBtn = document.getElementById("changeBannerBtn");
 const changeAvatarBtn = document.getElementById("changeAvatarBtn");
 
-const bannerImg = document.getElementById("avatarBackground");
+const bannerImg = document.getElementById("avatarBackgroundImg");
 const avatarImg = document.getElementById("avatarImage");
 
 const reactBtn1 = document.getElementById("reactButton_1");
@@ -33,7 +33,7 @@ if (changeBannerBtn) {
     fileInput.onchange = () => {
       const file = fileInput.files[0];
       if (file) {
-        bannerImg.style.backgroundImage = `url(${URL.createObjectURL(file)})`;
+        bannerImg.src = URL.createObjectURL(file);
       }
     };
     fileInput.click();
