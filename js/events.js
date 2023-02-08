@@ -20,6 +20,7 @@ const events = [
 
 function appendEvent(event) {
   const elem = `
+  <a href="#linkToEvent">
     <div class="event">
         <img src=${event.image} alt="" />
         <div class="eventDescription">
@@ -27,7 +28,8 @@ function appendEvent(event) {
         <p>${event.date}</p>
         </div>
         <iconify-icon icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon>
-    </div>`;
+    </div>
+    </a>`;
 
   eventsParent.insertAdjacentHTML("beforeend", elem);
 }
