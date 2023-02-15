@@ -28,10 +28,6 @@ button {
   color: white;
 }
 
-.active {
-  background: #f74855;
-}
-
 .rouded-l {
   border-radius: 10px 0 0 10px;
 }
@@ -48,6 +44,7 @@ button {
   background: #050026;
   height: 50px;
   padding: 0 30px;
+  transition: all 0.3s ease;
 }
 
 .flexBtn.active {
@@ -217,6 +214,11 @@ button {
   border: none;
   outline: none;
   width: 100%;
+  transition: all 0.3s ease;
+}
+
+.createEventSection .creatAnEvent:hover {
+  background: #a03138;
 }
 
 .createEventSection .joinAnEvent {
@@ -233,6 +235,11 @@ button {
   transition: all 0.3s ease;
   outline: none;
   width: 100%;
+  transition: all 0.3s ease;
+}
+
+.createEventSection .joinAnEvent:hover {
+  background: #f74855;
 }
 
 .containerSection {
