@@ -8,6 +8,12 @@
 
 button {
   cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.sm-hidden {
+  display: unset;
 }
 
 ::-webkit-scrollbar {
@@ -55,6 +61,10 @@ button {
 
 .mx-10 {
   margin: 0 10px;
+}
+
+.lg-ml-auto {
+  margin-left: auto;
 }
 
 .ml-auto {
@@ -264,6 +274,16 @@ button {
   line-height: 1.6;
 }
 
+.featured .eventFeaturesList-lg {
+  display: block;
+}
+
+.featured .eventFeaturesList-sm {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .featured .eventFeatures {
   align-items: center;
   display: flex;
@@ -367,4 +387,75 @@ button {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .lg-ml-auto {
+    margin-left: 0;
+  }
+  .sm-hidden {
+    display: none;
+  }
+
+  .sm-padding-20 {
+    padding: 20px;
+  }
+
+  .sideBar {
+    display: none;
+  }
+
+  .containerSection {
+    padding: 0px;
+  }
+
+  .featured {
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  .featured .eventContent {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .featured .eventFeaturesList-lg {
+    display: none;
+  }
+
+  .featured .eventFeaturesList-sm {
+    display: flex;
+  }
+
+  .featured .eventFeatures {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .featured .eventFeatures span {
+    margin-top: 10px;
+  }
+
+  .searchCreateBar {
+    display: none;
+  }
+
+  .filterMenu {
+    justify-content: center;
+  }
+
+  .filterMenu .filterButton {
+    display: none;
+  }
+
+  .filterMenu .filterButton {
+    margin: 0 auto;
+  }
+
+  .commentBox {
+    grid-template-columns: 1fr;
+  }
 }

@@ -53,7 +53,7 @@
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <div class="mt-20">
+            <div class="mt-20 eventFeaturesList-lg">
               <div class="eventFeatures mb-15">
                 <iconify-icon
                   height="23"
@@ -61,7 +61,7 @@
                   class="mr-5 font-purple"
                   icon="material-symbols:calendar-month-rounded"
                 ></iconify-icon>
-                <span class="semibold mr-5 semi-bold">Date:</span>
+                <span class="semibold mr-5 semi-bold sm-hidden">Date:</span>
                 <span>15/12/22</span>
               </div>
               <div class="eventFeatures mb-15">
@@ -71,7 +71,7 @@
                   class="mr-5 font-purple"
                   icon="mdi:people"
                 ></iconify-icon>
-                <span class="semibold mr-5 semi-bold">Members:</span>
+                <span class="semibold mr-5 semi-bold sm-hidden">Members:</span>
                 <span>20/22</span>
               </div>
               <div class="eventFeatures mb-15">
@@ -81,107 +81,141 @@
                   class="mr-5 font-purple"
                   icon="material-symbols:location-on-rounded"
                 ></iconify-icon>
-                <span class="semibold mr-5 semi-bold">Location:</span>
+                <span class="semibold mr-5 semi-bold sm-hidden">Location:</span>
                 <span>Laguna Seca , California</span>
+              </div>
+            </div>
+            <div class="mt-20 eventFeaturesList-sm">
+              <div class="eventFeatures mb-15">
+                <iconify-icon
+                  height="23"
+                  width="23"
+                  class="mr-5 font-purple"
+                  icon="material-symbols:calendar-month-rounded"
+                ></iconify-icon>
+                <span class="semibold mr-5 semi-bold sm-hidden">Date:</span>
+                <span>15/12/22</span>
+              </div>
+              <div class="eventFeatures mb-15">
+                <iconify-icon
+                  height="23"
+                  width="23"
+                  class="mr-5 font-purple"
+                  icon="material-symbols:location-on-rounded"
+                ></iconify-icon>
+                <span class="semibold mr-5 semi-bold sm-hidden">Location:</span>
+                <span>Laguna Seca , California</span>
+              </div>
+              <div class="eventFeatures mb-15">
+                <iconify-icon
+                  height="23"
+                  width="23"
+                  class="mr-5 font-purple"
+                  icon="mdi:people"
+                ></iconify-icon>
+                <span class="semibold mr-5 semi-bold sm-hidden">Members:</span>
+                <span>20/22</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="searchCreateBar">
-          <iconify-icon
-            class="font-white ml-20"
-            icon="ic:round-search"
-            height="23"
-            width="23"
-          ></iconify-icon>
-          <div class="searchBar">
-            <input type="text" placeholder="Search" />
-          </div>
-          <div class="createEvent">
-            <button class="createEventBtn font-white">Create Event</button>
-          </div>
-        </div>
-        <div class="filterMenu">
-          <button class="filterButton font-white">
+        <div class="sm-padding-20">
+          <div class="searchCreateBar">
             <iconify-icon
-              height="30"
-              width="30"
-              class="mr-5"
-              icon="mi:filter"
+              class="font-white ml-20"
+              icon="ic:round-search"
+              height="23"
+              width="23"
             ></iconify-icon>
-            <span>Filter</span>
-          </button>
-          <div class="switchMenu ml-auto">
-            <button class="flexBtn active font-white rouded-l">
-              <iconify-icon
-                height="20"
-                width="20"
-                icon="mdi:text-box-edit"
-              ></iconify-icon>
-              <span class="font-15 ml-10">Posts</span>
-            </button>
-            <button class="flexBtn font-white rouded-r">
-              <iconify-icon
-                height="20"
-                width="20"
-                icon="material-symbols:inventory-2-outline-rounded"
-              ></iconify-icon>
-              <span class="font-15 ml-10">Inventory</span>
-            </button>
+            <div class="searchBar">
+              <input type="text" placeholder="Search" />
+            </div>
+            <div class="createEvent">
+              <button class="createEventBtn font-white">Create Event</button>
+            </div>
           </div>
-        </div>
-        <div class="commentBox">
-          <div class="comment">
-            <div class="header font-white">
-              <img src="/images/event-post/comment-profile.png" alt="" />
-              <span class="name font-16 ml-10">Alex Buffer</span>
-              <span class="spacerCircle mx-10">•</span>
-              <span class="date font-14">3 days ago</span>
+          <div class="filterMenu">
+            <button class="filterButton font-white">
               <iconify-icon
-                height="24"
-                width="24"
-                class="ml-auto"
-                icon="ic:baseline-more-vert"
+                height="30"
+                width="30"
+                class="mr-5"
+                icon="mi:filter"
               ></iconify-icon>
+              <span>Filter</span>
+            </button>
+            <div class="switchMenu lg-ml-auto">
+              <button class="flexBtn active font-white rouded-l">
+                <iconify-icon
+                  height="20"
+                  width="20"
+                  icon="mdi:text-box-edit"
+                ></iconify-icon>
+                <span class="font-15 ml-10">Posts</span>
+              </button>
+              <button class="flexBtn font-white rouded-r">
+                <iconify-icon
+                  height="20"
+                  width="20"
+                  icon="material-symbols:inventory-2-outline-rounded"
+                ></iconify-icon>
+                <span class="font-15 ml-10">Inventory</span>
+              </button>
             </div>
-            <div>
-              <p class="commentMessage font-white font-14">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet. Amet minim
-                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                Velit officia consequat duis enim velit mollit. Exercitation
-                veniam consequat sunt nostrud amet.Amet minim mollit non
-                deserunt ullamco est sit aliqua dolor do amet sint.
-              </p>
-            </div>
-            <div></div>
           </div>
-          <div class="comment">
-            <div class="header font-white">
-              <img src="/images/event-post/comment-profile.png" alt="" />
-              <span class="name font-16 ml-10">Alex Buffer</span>
-              <span class="spacerCircle mx-10">•</span>
-              <span class="date font-14">3 days ago</span>
-              <iconify-icon
-                height="24"
-                width="24"
-                class="ml-auto"
-                icon="ic:baseline-more-vert"
-              ></iconify-icon>
+          <div class="commentBox">
+            <div class="comment">
+              <div class="header font-white">
+                <img src="/images/event-post/comment-profile.png" alt="" />
+                <span class="name font-16 ml-10">Alex Buffer</span>
+                <span class="spacerCircle mx-10">•</span>
+                <span class="date font-14">3 days ago</span>
+                <iconify-icon
+                  height="24"
+                  width="24"
+                  class="ml-auto"
+                  icon="ic:baseline-more-vert"
+                ></iconify-icon>
+              </div>
+              <div>
+                <p class="commentMessage font-white font-14">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet. Amet minim
+                  mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                  Velit officia consequat duis enim velit mollit. Exercitation
+                  veniam consequat sunt nostrud amet.Amet minim mollit non
+                  deserunt ullamco est sit aliqua dolor do amet sint.
+                </p>
+              </div>
+              <div></div>
             </div>
-            <div>
-              <p class="commentMessage font-white font-14">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet. Amet minim
-                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                Velit officia consequat duis enim velit mollit. Exercitation
-                veniam consequat sunt nostrud amet.Amet minim mollit non
-                deserunt ullamco est sit aliqua dolor do amet sint.
-              </p>
+            <div class="comment">
+              <div class="header font-white">
+                <img src="/images/event-post/comment-profile.png" alt="" />
+                <span class="name font-16 ml-10">Alex Buffer</span>
+                <span class="spacerCircle mx-10">•</span>
+                <span class="date font-14">3 days ago</span>
+                <iconify-icon
+                  height="24"
+                  width="24"
+                  class="ml-auto"
+                  icon="ic:baseline-more-vert"
+                ></iconify-icon>
+              </div>
+              <div>
+                <p class="commentMessage font-white font-14">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet. Amet minim
+                  mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                  Velit officia consequat duis enim velit mollit. Exercitation
+                  veniam consequat sunt nostrud amet.Amet minim mollit non
+                  deserunt ullamco est sit aliqua dolor do amet sint.
+                </p>
+              </div>
+              <div></div>
             </div>
-            <div></div>
           </div>
         </div>
       </div>
