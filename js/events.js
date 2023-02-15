@@ -2,17 +2,17 @@ const eventsParent = document.getElementById("eventsConatiner");
 
 const events = [
   {
-    image: "/images/musicEvent.svg",
+    image: "../images/musicEvent.svg",
     name: "Music event",
     date: "12/10/2023",
   },
   {
-    image: "/images/chessEvent.svg",
+    image: "../images/chessEvent.svg",
     name: "NY Chess Championship",
     date: "12/10/2023",
   },
   {
-    image: "/images/chessKnockout.svg",
+    image: "../images/chessKnockout.svg",
     name: "Chess Knockout Games",
     date: "12/10/2023",
   },
