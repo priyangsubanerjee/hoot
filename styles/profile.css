@@ -607,6 +607,10 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
+.contentGrid .events a {
+  text-decoration: none;
+}
+
 .contentGrid .events .event:hover {
   background: rgba(255, 255, 255, 0.15);
 }
@@ -620,11 +624,13 @@ body {
 .contentGrid .events .event .eventDescription {
   color: white;
   margin-left: 16px;
+  text-decoration: none;
 }
 
 .contentGrid .events .event .eventDescription h3 {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
 }
 
 .contentGrid .events .event .eventDescription p {
@@ -846,5 +852,17 @@ body {
 
   .contentGrid .gridElement {
     padding: 20px;
+  }
+
+  .contentGrid .comments .writeCommentFlexBox img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .contentGrid .comments .messageBox img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
   }
 }
