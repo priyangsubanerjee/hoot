@@ -537,8 +537,32 @@ button {
 }
 
 .inventory .row {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: white;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+.inventory .row.blue.blue {
+  background: #040022;
+}
+
+.inventory .row .item-description {
+  display: none;
+  padding: 10px 40px;
+  font-size: 13px;
+  color: #cccccc;
+  line-height: 1.7;
+  margin-top: -10px;
+}
+
+.inventory .row .item-description.active {
+  display: block;
+}
+
+.inventory .gridRow {
   padding: 20px 40px;
-  margin: 10px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-row-gap: 80px;
@@ -548,17 +572,16 @@ button {
   color: #cccccc;
 }
 
-.inventory .row .rowItem {
+.inventory .gridRow .rowItem {
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.inventory .row.blue {
+.inventory .gridRow.blue {
   background: #040022;
   color: white;
-  border-radius: 10px;
   font-weight: 300;
 }
 

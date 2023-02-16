@@ -6,6 +6,7 @@ const searchInput = document.querySelector(".searchInput");
 const commentContainers = document.querySelector(".commentBox");
 const inventoryContainers = document.querySelector(".inventory");
 const comments = document.querySelectorAll(".comment");
+const viewDetailsBtns = document.querySelectorAll(".view-details");
 
 moreOptionButtons.forEach((button, i) => {
   button.addEventListener("click", (e) => {
@@ -92,6 +93,19 @@ searchInput.addEventListener("keyup", (e) => {
     } else {
       comment.classList.remove("visible");
     }
+  });
+});
+
+viewDetailsBtns.forEach((button, i) => {
+  button.addEventListener("click", (e) => {
+    const description = document.querySelectorAll(".item-description");
+    description.forEach((d, j) => {
+      if (i === j) {
+        d.classList.toggle("active");
+      } else {
+        d.classList.remove("active");
+      }
+    });
   });
 });
 
