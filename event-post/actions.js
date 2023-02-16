@@ -1,6 +1,10 @@
 const moreOptionButtons = document.querySelectorAll(".moreOptionsButton");
 const upVoteButtons = document.querySelectorAll(".upVoteButton");
 const downVoteButtons = document.querySelectorAll(".downVoteButton");
+const switchMenuBtns = document.querySelectorAll(".switchMenuBtn");
+const searchInput = document.querySelector(".searchInput");
+
+const comments = document.querySelectorAll(".comment");
 
 moreOptionButtons.forEach((button, i) => {
   button.addEventListener("click", (e) => {
@@ -48,6 +52,37 @@ downVoteButtons.forEach((button, i) => {
       icon.setAttribute("icon", "bxs:downvote");
     } else {
       icon.setAttribute("icon", "bx:downvote");
+    }
+  });
+});
+
+switchMenuBtns.forEach((button, i) => {
+  button.addEventListener("click", (e) => {
+    const btns = document.querySelectorAll(".switchMenuBtn");
+    btns.forEach((btn, j) => {
+      if (i === j) {
+        btn.classList.add("active");
+      } else {
+        btn.classList.remove("active");
+      }
+    });
+  });
+});
+
+searchInput.addEventListener("keyup", (e) => {
+  const searchValue = e.target.value.toLowerCase();
+  if (searchValue === "") {
+    comments.forEach((comment) => {
+      comment.classList.add("visible");
+    });
+    return;
+  }
+  comments.forEach((comment) => {
+    const commentText = comment.querySelector(".commentMessage").textContent;
+    if (commentText.toLowerCase().includes(searchValue)) {
+      comment.classList.add("visible");
+    } else {
+      comment.classList.remove("visible");
     }
   });
 });

@@ -138,6 +138,10 @@ button {
   border-radius: 50px;
 }
 
+.font-red {
+  color: #f74855;
+}
+
 .parent {
   height: 100vh;
   overflow: hidden;
@@ -329,7 +333,12 @@ button {
   align-items: center;
 }
 
+.searchCreateBar .searchBar {
+  width: 100%;
+}
+
 .searchCreateBar .searchBar input {
+  width: 100%;
   background: transparent;
   border: none;
   outline: none;
@@ -347,7 +356,8 @@ button {
   margin-left: auto;
 }
 
-.searchCreateBar .createEvent button {
+.searchCreateBar .createEvent .createEventBtn {
+  white-space: nowrap;
   background: #f74855;
   display: flex;
   align-items: center;
@@ -358,6 +368,12 @@ button {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 14px;
+  transition: all 0.3s ease;
+  flex-shrink: 1;
+}
+
+.searchCreateBar .createEvent .createEventBtn:hover {
+  background: #a52f37;
 }
 
 .filterMenu {
@@ -393,6 +409,11 @@ button {
   background: #050026;
   border-radius: 10px;
   padding: 20px;
+  display: none;
+}
+
+.comment.visible {
+  display: block;
 }
 
 .comment .header {
@@ -429,6 +450,11 @@ button {
   display: flex;
   align-items: center;
   padding: 5px 15px;
+  transition: all 0.3s ease;
+}
+
+.comment .actionMenu .join-group:hover {
+  background: #391790;
 }
 
 .actionMenuToast {
@@ -456,7 +482,6 @@ button {
   font-size: 15px;
   display: flex;
   align-items: center;
-  color: #f74855;
 }
 
 .actionMenuToast li span {
@@ -468,7 +493,31 @@ button {
   color: white;
 }
 
-@media screen and (max-width: 1200px) {
+.upVoteButton {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.upVoteButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.downVoteButton {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.downVoteButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 800px) {
   .lg-ml-auto {
     margin-left: 0;
   }
