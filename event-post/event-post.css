@@ -8,8 +8,14 @@
 
 button {
   cursor: pointer;
-  white-space: nowrap;
-  flex-shrink: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: inherit;
+}
+
+.relative {
+  position: relative;
 }
 
 .sm-hidden {
@@ -62,6 +68,10 @@ button {
 
 .lg-ml-auto {
   margin-left: auto;
+}
+
+.ml-5 {
+  margin-left: 5px;
 }
 
 .ml-auto {
@@ -118,6 +128,14 @@ button {
 
 .font-17 {
   font-size: 17px;
+}
+
+.bg-purple {
+  background-color: #5222d0;
+}
+
+.br-50 {
+  border-radius: 50px;
 }
 
 .parent {
@@ -394,6 +412,60 @@ button {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   margin-top: 10px;
+}
+
+.comment .actionMenu {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.comment .actionMenu .actionBtn button {
+  display: flex;
+  align-items: center;
+}
+
+.comment .actionMenu .join-group {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+.actionMenuToast {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+  text-align: left;
+  background: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.actionMenuToast.active {
+  display: block;
+}
+
+.actionMenuToast li {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  color: #f74855;
+}
+
+.actionMenuToast li span {
+  margin-left: 10px;
+}
+
+.actionMenuToast li:hover {
+  background: #f74855;
+  color: white;
 }
 
 @media screen and (max-width: 1200px) {

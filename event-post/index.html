@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./event-post.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <script src="./actions.js" defer></script>
     <title>Event post page</title>
   </head>
   <body>
@@ -161,12 +162,31 @@
                 <span class="name font-16 ml-10">Alex Buffer</span>
                 <span class="spacerCircle mx-10">•</span>
                 <span class="date font-14">3 days ago</span>
-                <iconify-icon
-                  height="24"
-                  width="24"
-                  class="ml-auto"
-                  icon="ic:baseline-more-vert"
-                ></iconify-icon>
+                <button class="ml-auto relative moreOptionsButton">
+                  <iconify-icon
+                    height="24"
+                    width="24"
+                    icon="ic:baseline-more-vert"
+                  ></iconify-icon>
+                  <ul class="actionMenuToast">
+                    <li>
+                      <iconify-icon
+                        height="20"
+                        width="20"
+                        icon="material-symbols:delete-outline-rounded"
+                      ></iconify-icon>
+                      <span>Delete</span>
+                    </li>
+                    <li>
+                      <iconify-icon
+                        height="20"
+                        width="20"
+                        icon="mdi:pencil"
+                      ></iconify-icon>
+                      <span>Edit</span>
+                    </li>
+                  </ul>
+                </button>
               </div>
               <div>
                 <p class="commentMessage font-white font-14">
@@ -179,7 +199,32 @@
                   deserunt ullamco est sit aliqua dolor do amet sint.
                 </p>
               </div>
-              <div></div>
+              <div class="actionMenu mt-20">
+                <button class="upVoteButton font-white">
+                  <iconify-icon
+                    height="20"
+                    weight="20"
+                    icon="bx:upvote"
+                    class="icon"
+                  ></iconify-icon>
+                  <span class="ml-5">2.3K</span>
+                </button>
+                <button class="downVoteButton font-white ml-20">
+                  <iconify-icon
+                    height="20"
+                    weight="20"
+                    icon="bx:downvote"
+                  ></iconify-icon>
+                </button>
+                <button class="font-white ml-auto bg-purple br-50 join-group">
+                  <iconify-icon
+                    height="20"
+                    width="20"
+                    icon="mdi:people"
+                  ></iconify-icon>
+                  <span class="ml-5">Join group</span>
+                </button>
+              </div>
             </div>
             <div class="comment">
               <div class="header font-white">
@@ -187,12 +232,23 @@
                 <span class="name font-16 ml-10">Alex Buffer</span>
                 <span class="spacerCircle mx-10">•</span>
                 <span class="date font-14">3 days ago</span>
-                <iconify-icon
-                  height="24"
-                  width="24"
-                  class="ml-auto"
-                  icon="ic:baseline-more-vert"
-                ></iconify-icon>
+                <button class="ml-auto relative moreOptionsButton">
+                  <iconify-icon
+                    height="24"
+                    width="24"
+                    icon="ic:baseline-more-vert"
+                  ></iconify-icon>
+                  <ul class="actionMenuToast">
+                    <li>
+                      <iconify-icon
+                        height="20"
+                        width="20"
+                        icon="ic:baseline-report-gmailerrorred"
+                      ></iconify-icon>
+                      <span>Report</span>
+                    </li>
+                  </ul>
+                </button>
               </div>
               <div>
                 <p class="commentMessage font-white font-14">
@@ -205,7 +261,32 @@
                   deserunt ullamco est sit aliqua dolor do amet sint.
                 </p>
               </div>
-              <div></div>
+              <div class="actionMenu mt-20">
+                <button class="upVoteButton font-white">
+                  <iconify-icon
+                    height="20"
+                    weight="20"
+                    icon="bx:upvote"
+                    class="icon"
+                  ></iconify-icon>
+                  <span class="ml-5">2.3K</span>
+                </button>
+                <button class="downVoteButton font-white ml-20">
+                  <iconify-icon
+                    height="20"
+                    weight="20"
+                    icon="bx:downvote"
+                  ></iconify-icon>
+                </button>
+                <button class="font-white ml-auto bg-purple br-50 join-group">
+                  <iconify-icon
+                    height="20"
+                    width="20"
+                    icon="mdi:people"
+                  ></iconify-icon>
+                  <span class="ml-5">Join group</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
