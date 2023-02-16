@@ -3,7 +3,8 @@ const upVoteButtons = document.querySelectorAll(".upVoteButton");
 const downVoteButtons = document.querySelectorAll(".downVoteButton");
 const switchMenuBtns = document.querySelectorAll(".switchMenuBtn");
 const searchInput = document.querySelector(".searchInput");
-
+const commentContainers = document.querySelector(".commentBox");
+const inventoryContainers = document.querySelector(".inventory");
 const comments = document.querySelectorAll(".comment");
 
 moreOptionButtons.forEach((button, i) => {
@@ -62,6 +63,13 @@ switchMenuBtns.forEach((button, i) => {
     btns.forEach((btn, j) => {
       if (i === j) {
         btn.classList.add("active");
+        if (i === 0) {
+          commentContainers.classList.add("active");
+          inventoryContainers.classList.remove("active");
+        } else if (i === 1) {
+          commentContainers.classList.remove("active");
+          inventoryContainers.classList.add("active");
+        }
       } else {
         btn.classList.remove("active");
       }
