@@ -11,6 +11,43 @@
   </head>
   <body>
     <div class="parent">
+      <div class="createPost">
+        <div class="card">
+          <div class="header">
+            <div></div>
+            <div class="font-17 font-white">
+              <p class="titleBar">Create a post</p>
+            </div>
+            <button class="cross-gray close-modal">
+              <iconify-icon
+                height="24"
+                width="24"
+                icon="ri:close-fill"
+              ></iconify-icon>
+            </button>
+          </div>
+          <div class="createPostEditSection">
+            <img src="../images/event-post/john.png" class="avatar" alt="" />
+            <div>
+              <p class="account-name">John Doe</p>
+              <textarea
+                class="textArea"
+                name=""
+                placeholder="Write something.."
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+          <div class="actionMenu">
+            <div class="font-white counter">
+              <span class="countText">0</span>/250
+            </div>
+            <button class="post">Post</button>
+          </div>
+        </div>
+      </div>
       <div class="sideBar">
         <div class="header">
           <p>Joined Events</p>
@@ -132,7 +169,7 @@
               <input class="searchInput" type="text" placeholder="Search" />
             </div>
             <div class="createEvent">
-              <button class="createEventBtn font-white">
+              <button class="createPostBtn font-white">
                 <iconify-icon
                   height="20"
                   width="20"

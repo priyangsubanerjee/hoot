@@ -7,6 +7,11 @@ const commentContainers = document.querySelector(".commentBox");
 const inventoryContainers = document.querySelector(".inventory");
 const comments = document.querySelectorAll(".comment");
 const viewDetailsBtns = document.querySelectorAll(".view-details");
+const textArea = document.querySelector(".textArea");
+const countText = document.querySelector(".countText");
+const createPostBtn = document.querySelector(".createPostBtn");
+const postModal = document.querySelector(".createPost");
+const closePostModalBtn = document.querySelector(".close-modal");
 
 moreOptionButtons.forEach((button, i) => {
   button.addEventListener("click", (e) => {
@@ -107,6 +112,26 @@ viewDetailsBtns.forEach((button, i) => {
       }
     });
   });
+});
+
+textArea.addEventListener("keyup", (e) => {
+  const text = e.target.value;
+  const textLength = text.length;
+  const maxLength = 250;
+  countText.textContent = textLength;
+  if (textLength > maxLength) {
+    countText.classList.add("red");
+  } else {
+    countText.classList.remove("red");
+  }
+});
+
+createPostBtn.addEventListener("click", (e) => {
+  postModal.classList.toggle("active");
+});
+
+closePostModalBtn.addEventListener("click", (e) => {
+  postModal.classList.toggle("active");
 });
 
 document.addEventListener("click", (e) => {
