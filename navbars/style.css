@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  cursor: pointer;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.inset-x-0 {
+  left: 0;
+  right: 0;
+}
+
+.inset-y-0 {
+  top: 0;
+  bottom: 0;
+}
+
+.outline-none {
+  outline: none;
+}
+
+.border-none {
+  border: none;
+}
+
+.boder-1-blue {
+  border: 1px solid #100054;
+}
+
+.border-b-gray-1 {
+  border-bottom: 1px solid #343434;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-60 {
+  height: 60px;
+}
+
+.w-400 {
+  width: 400px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.px-5 {
+  padding: 0 5px;
+}
+
+.py-10.px-20 {
+  padding: 10px 20px;
+}
+
+.px-10 {
+  padding: 0 10px;
+}
+
+.px-20 {
+  padding: 0 20px;
+}
+
+.py-2 {
+  padding: 2px 0;
+}
+
+.py-5 {
+  padding: 5px 0;
+}
+
+.py-10 {
+  padding: 10px 0;
+}
+
+.py-20 {
+  padding: 20px 0;
+}
+
+.mt-4 {
+  margin-top: 4px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.ml-70 {
+  margin-left: 70px;
+}
+
+.mx-20 {
+  margin: 0 20px;
+}
+
+.mx-10 {
+  margin: 0 10px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.bg-blue-900 {
+  background: #100054;
+}
+
+.bg-blue-2 {
+  background: #050026;
+}
+
+.bg-red-1 {
+  background: #ed112e;
+}
+
+.bg-green-1 {
+  background: #259d47;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-gray-1 {
+  color: #dfdfdf;
+}
+
+.color-gray-2 {
+  color: #b1b1b1;
+}
+
+.color-blue-2 {
+  color: #050026;
+}
+
+.color-blue-3 {
+  color: #3883ff;
+}
+
+.text-10 {
+  font-size: 10px;
+}
+
+.text-13 {
+  font-size: 13px;
+}
+
+.text-17 {
+  font-size: 17px;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-robo {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background: #050026;
+  padding: 0 100px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.navItems li {
+  list-style: none;
+}
+
+.navItems li a {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.register {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  background: #f74855;
+  padding: 12px 30px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.register:hover {
+  background: #bd353e;
+  color: #fff;
+}
+
+.profile-avatar-top {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+
+.user-Avatar {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+
+.notification-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #f74855;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.dot-purple {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: #8256f5;
+}
+
+.notification-popover-panel {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  transform: translateX(50%) translateY(0px);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 330px;
+  height: 412px;
+  z-index: 999;
+  overflow: hidden;
+  display: none;
+  animation: slideIn 0.7s ease;
+}
+
+.notification-popover-panel.active {
+  display: block;
+}
+
+/* Slide in / out animations */
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(50%) translateY(40px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(50%) translateY(0);
+    opacity: 1;
+  }
+}

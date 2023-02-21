@@ -605,7 +605,7 @@ button {
   background: #050026a8;
   opacity: 0;
   z-index: -10;
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
 }
 
 .createPost.active {

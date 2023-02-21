@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar without search -->
+
+    <nav class="nav">
+      <img src="../images/hootLogo.png" class="logo" alt="" />
+      <ul class="navItems ml-70">
+        <li class="mx-20"><a href="#">Home</a></li>
+        <li class="mx-20"><a href="#">About</a></li>
+        <li class="mx-20"><a href="#">Features</a></li>
+        <li class="mx-20"><a href="#">Contact us</a></li>
+      </ul>
+      <ul class="navItems ml-auto">
+        <li class="mx-10"><a href="#">Login</a></li>
+        <li class="mx-10"><a href="#" class="register">Register</a></li>
+        <li class="mx-10">
+          <a href="#">
+            <span>Eng</span>
+            <iconify-icon
+              class="ml-5"
+              height="20"
+              width="20"
+              icon="material-symbols:arrow-drop-down"
+            ></iconify-icon>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <br />
+    <br />
+
+    <!-- Navbar with search -->
+
+    <nav class="nav">
+      <img src="../images/hootLogo.png" class="logo" alt="" />
+      <div
+        class="h-60 w-400 flex items-center justify-center bg-blue-900 px-20 ml-40"
+      >
+        <iconify-icon
+          class="color-gray-1"
+          height="20"
+          width="20"
+          icon="ic:round-search"
+        ></iconify-icon>
+        <input
+          class="bg-transparent text-17 color-white outline-none border-none w-full ml-5"
+          type="text"
+          placeholder="Search"
+          name=""
+          id=""
+        />
+      </div>
+      <ul class="navItems ml-auto font-robo">
+        <li class="mx-20 flex items-center">
+          <iconify-icon
+            class="color-white"
+            height="20"
+            width="20"
+            icon="ri:home-7-fill"
+          ></iconify-icon>
+          <span class="color-white ml-10 text-17"> Home </span>
+        </li>
+        <li class="mx-20 flex items-center">
+          <iconify-icon
+            class="color-white"
+            height="20"
+            width="20"
+            icon="mdi:account-group"
+          ></iconify-icon>
+          <span class="color-white ml-10 text-17"> Friends </span>
+        </li>
+        <li class="mx-20 flex items-center">
+          <iconify-icon
+            class="color-white"
+            height="20"
+            width="20"
+            icon="material-symbols:explore"
+          ></iconify-icon>
+          <span class="color-white ml-10 text-17"> Explore </span>
+        </li>
+      </ul>
+      <div class="navItems ml-20 font-robo cursor-pointer">
+        <div class="flex items-center">
+          <iconify-icon
+            class="color-white"
+            height="20"
+            width="20"
+            icon="ic:baseline-notifications"
+          ></iconify-icon>
+        </div>
+      </div>
+      <div class="navItems ml-40 font-robo">
+        <div class="flex items-center cursor-pointer">
+          <img
+            src="../images/navbar/avatarYellow.png"
+            class="profile-avatar-top"
+            alt=""
+          />
+          <iconify-icon
+            class="color-white ml-5"
+            height="20"
+            width="20"
+            icon="material-symbols:keyboard-arrow-down-rounded"
+          ></iconify-icon>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+    <br />
+
+    <!-- Navbar with notification -->
+
+    <nav class="nav">
+      <img src="../images/hootLogo.png" class="logo" alt="" />
+      <div
+        class="h-60 w-400 flex items-center justify-center bg-blue-900 px-20 ml-40"
+      >
+        <iconify-icon
+          class="color-gray-1"
+          height="20"
+          width="20"
+          icon="ic:round-search"
+        ></iconify-icon>
+        <input
+          class="bg-transparent text-17 color-white outline-none border-none w-full ml-5"
+          type="text"
+          placeholder="Search"
+          name=""
+          id=""
+        />
+      </div>
+      <ul class="navItems ml-auto font-robo">
+        <li class="mx-20 flex items-center">
+          <iconify-icon
+            class="color-white"
+            height="20"
+            width="20"
+            icon="ri:home-7-fill"
+          ></iconify-icon>
+          <span class="color-white ml-10 text-17"> Home </span>
+        </li>
+        <li class="mx-20 flex items-center">
+          <iconify-icon
+            class="color-white"
+            height="20"
+            width="20"
+            icon="mdi:account-group"
+          ></iconify-icon>
+          <span class="color-white ml-10 text-17"> Friends </span>
+        </li>
+        <li class="mx-20 flex items-center">
+          <iconify-icon
+            class="color-white"
+            height="20"
+            width="20"
+            icon="material-symbols:explore"
+          ></iconify-icon>
+          <span class="color-white ml-10 text-17"> Explore </span>
+        </li>
+      </ul>
+      <div class="navItems ml-20 font-robo">
+        <div class="flex items-center relative">
+          <div class="notification-dot boder-1-blue"></div>
+          <iconify-icon
+            class="color-white cursor-pointer notification-button"
+            height="24"
+            width="24"
+            icon="ic:baseline-notifications"
+          ></iconify-icon>
+          <div class="notification-popover-panel bg-blue-2">
+            <div
+              class="py-10 px-20 bg-white font-poppins color-blue-2 font-600"
+            >
+              <span>Notifications</span>
+            </div>
+            <div class="p-20">
+              <div class="py-10 flex justify-between font-robo border-b-gray-1">
+                <p class="color-white text-13">2 unread</p>
+                <p class="color-blue-3 text-13">Mark as read</p>
+              </div>
+              <div class="mt-20">
+                <div class="flex justify-between items-center">
+                  <img
+                    src="../images/navbar/userAv.png"
+                    class="user-Avatar"
+                    alt=""
+                  />
+                  <div class="font-inter">
+                    <p class="text-13 color-white">
+                      Ramen contributed to XMAS Party
+                    </p>
+                    <p class="text-10 color-gray-2 mt-4">1 day ago</p>
+                  </div>
+                  <div class="dot-purple ml-10"></div>
+                </div>
+                <div class="flex justify-between items-center mt-20">
+                  <img
+                    src="../images/navbar/userAv.png"
+                    class="user-Avatar"
+                    alt=""
+                  />
+                  <div class="font-inter">
+                    <p class="text-13 color-white">
+                      Ramen contributed to XMAS Party
+                    </p>
+                    <p class="text-10 color-gray-2 mt-4">1 day ago</p>
+                  </div>
+                  <div class="dot-purple ml-10"></div>
+                </div>
+                <div class="flex justify-between items-center mt-20">
+                  <img
+                    src="../images/navbar/userAv.png"
+                    class="user-Avatar"
+                    alt=""
+                  />
+                  <div class="font-inter">
+                    <p class="text-13 color-white">
+                      Ramen contributed to XMAS Party
+                    </p>
+                    <p class="text-10 color-gray-2 mt-4">1 day ago</p>
+                  </div>
+                  <div class="dot-purple ml-10"></div>
+                </div>
+                <div class="flex justify-between items-center mt-20">
+                  <img
+                    src="../images/navbar/userAv.png"
+                    class="user-Avatar"
+                    alt=""
+                  />
+                  <div class="font-inter">
+                    <p class="text-13 color-white">
+                      Drem sent a friend request
+                    </p>
+                    <p class="text-10 color-gray-2 mt-4">1 day ago</p>
+                  </div>
+                  <div class="flex items-center">
+                    <button
+                      class="border-none outline-none color-white p-5 bg-green-1 rounded-full cursor-pointer"
+                    >
+                      <iconify-icon
+                        height="14"
+                        width="14"
+                        icon="noto-v1:check-mark-button"
+                      ></iconify-icon>
+                    </button>
+                    <button
+                      class="border-none outline-none color-white p-5 bg-red-1 rounded-full cursor-pointer ml-10"
+                    >
+                      <iconify-icon
+                        height="14"
+                        width="14"
+                        icon="material-symbols:close"
+                      ></iconify-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navItems ml-40 font-robo">
+        <div class="flex items-center cursor-pointer">
+          <img
+            src="../images/navbar/avatarYellow.png"
+            class="profile-avatar-top"
+            alt=""
+          />
+          <iconify-icon
+            class="color-white ml-5"
+            height="20"
+            width="20"
+            icon="material-symbols:keyboard-arrow-down-rounded"
+          ></iconify-icon>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
